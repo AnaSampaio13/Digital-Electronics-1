@@ -278,4 +278,4 @@ end architecture testbench;
 
 ### **Waveform #Exercise 2:**
 ![Link text itself] (https://github.com/AnaSampaio13/Digital-Electronics-1/issues/2)
-###[EDA Playground Example] (https://www.edaplayground.com/x/riyQ)**
+###**[EDA Playground Example] (https://www.edaplayground.com/x/riyQ)**
