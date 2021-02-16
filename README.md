@@ -1,7 +1,7 @@
 # Digital-Electronics-1
 
 ## Exercise 1
-
+```VHDL
 ------------------------------------------------------------------------
 --
 -- Example of basic OR, AND, XOR gates.
@@ -42,6 +42,7 @@ begin
 
 end architecture dataflow;
 
+```
 ------------------------------------------------------------------------
 --
 -- Testbench for basic gates circuit.
