@@ -136,7 +136,7 @@ end architecture testbench;
 --------------------------------------------------------------------
 
 ### **Waveform #Exercise 1:**
-![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/issues/1.PNG)
+![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/01-gates/Ex.1.PNG)
 ### **[EDA Playground Example](https://www.edaplayground.com/x/Gf7Z)**
 
 --------------------------------------------------------------------
@@ -280,5 +280,5 @@ end architecture testbench;
 ------------------------------------------------------------------
 
 ### **Waveform #Exercise 2:**
-![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/issues/2.PNG)
+![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/01-gates/Ex.2.PNG)
 ### **[EDA Playground Example](https://www.edaplayground.com/x/riyQ)**
