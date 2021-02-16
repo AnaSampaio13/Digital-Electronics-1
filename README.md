@@ -43,6 +43,7 @@ begin
 end architecture dataflow;
 
 ```
+``` VHDL
 ------------------------------------------------------------------------
 --
 -- Testbench for basic gates circuit.
@@ -131,17 +132,17 @@ begin
     end process p_stimulus;
 
 end architecture testbench;
-
+```
 --------------------------------------------------------------------
 
 ### **Waveform #Exercise 1:**
-![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/issues/1)
+![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/issues/1.PNG)
 ### **[EDA Playground Example](https://www.edaplayground.com/x/Gf7Z)**
 
 --------------------------------------------------------------------
 
 ## Exercise 2
-
+```VHDL
 ------------------------------------------------------------------------
 --
 -- Example of basic OR, AND, XOR gates.
@@ -184,7 +185,8 @@ begin
     
 
 end architecture dataflow;
-
+```
+```VHDL 
 ------------------------------------------------------------------------
 --
 -- Testbench for basic gates circuit.
@@ -274,9 +276,9 @@ begin
     end process p_stimulus;
 
 end architecture testbench;
-
+```
 ------------------------------------------------------------------
 
 ### **Waveform #Exercise 2:**
-![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/issues/2)
+![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1/issues/2.PNG)
 ### **[EDA Playground Example](https://www.edaplayground.com/x/riyQ)**
