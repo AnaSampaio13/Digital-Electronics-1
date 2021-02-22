@@ -353,6 +353,9 @@ end architecture testbench;
 ------------------------------------------------------------------------
 
 ### **EDA Playground example with one reported error: **
+```VHDL
+
+-----------------------------------------------------------------------
 
 ![Link text itself](https://www.edaplayground.com/x/AjCA)
 
@@ -399,7 +402,6 @@ begin
 end architecture Behavioral;
 ```
 ```VHDL 
-
 
 ------------------------------------------------------------------------
 --
