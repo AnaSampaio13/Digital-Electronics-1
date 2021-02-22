@@ -1,5 +1,5 @@
 # **Digital-Electronics-1**
-# **Laboratory Nº2**
+# **Laboratory N.2**
 
 
 ![Link text itself](https://github.com/AnaSampaio13/Digital-Electronics-1)
@@ -7,6 +7,7 @@
 
 ------------------------------------------------------------------------
 ## **Exercise 1: The truth table for 2-bit**
+```VHDL
 
 **Dec.equivalent** | **B[1:0]** | **A[1:0]** | B is greater than A | B equals A | B is less than A
 --- | --- | --- | --- | --- | ---
@@ -27,10 +28,11 @@
 14 | 11 | 10 | 1 | 0 | 0 |
 15 | 11 | 11 | 0 | 1 | 0 |
 
-
+```
 
 ------------------------------------------------------------------------
 ## **Exercise 2: Comparator for 2-bit**
+```VHDL
 
 ### **Karnaugh maps**
 
@@ -51,6 +53,9 @@ Greater_PoS = m0 . m4 . m5 . m8 . m9. m10 . m12 . m13 . m14 . m15 = (b1+b0+a1+a0
 
 ### **EDA Playground example: **
 ![Link text itself](https://www.edaplayground.com/x/hQ7j)
+
+```
+```VHDL
 
 ------------------------------------------------------------------------
 --
@@ -90,6 +95,9 @@ begin
 
 
 end architecture Behavioral;
+
+```
+```VHDL 
 
 
 ------------------------------------------------------------------------
@@ -189,8 +197,12 @@ begin
 
 end architecture testbench;
 
+```
+
+-----------------------------------------------------------------------
 
 ## **Exercise 3: Comparator for 4-bit**
+```VHDL 
 
 ### **EDA Playground example: **
 
@@ -237,6 +249,9 @@ begin
 
 
 end architecture Behavioral;
+
+```
+```VHDL
 
 ------------------------------------------------------------------------
 --
@@ -333,8 +348,9 @@ begin
     end process p_stimulus;
 
 end architecture testbench;
+```
 
-
+------------------------------------------------------------------------
 
 ### **EDA Playground example with one reported error: **
 
@@ -381,6 +397,8 @@ begin
 
 
 end architecture Behavioral;
+```
+```VHDL 
 
 
 ------------------------------------------------------------------------
@@ -478,6 +496,7 @@ begin
     end process p_stimulus;
 
 end architecture testbench;
+```
 
 
 [2021-02-22 13:05:04 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   --vcd=dump.vcd && sed -i 's/^U/X/g; s/^-/X/g; s/^H/1/g; s/^L/0/g' dump.vcd 
