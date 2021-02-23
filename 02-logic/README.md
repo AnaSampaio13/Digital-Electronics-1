@@ -340,6 +340,42 @@ begin
         assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
         -- If false, then report an error
         report "Test failed for input combination: 0000, 0010" severity error;
+		
+		  -- Sixth test values
+        s_b <= "1010"; s_a <= "1010"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1010, 1010" severity error;
+
+        -- Seventh test values
+        s_b <= "1100"; s_a <= "1000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1100, 1000" severity error;
+
+        -- Eight test values
+        s_b <= "1100"; s_a <= "0000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1100, 0000" severity error;
+
+        -- Ninth test values
+        s_b <= "0000"; s_a <= "1111"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0000, 1111" severity error;
+        
+        -- Tenth test values
+        s_b <= "1111"; s_a <= "1111"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1111, 1111" severity error;
+
 
 
         -- Report a note at the end of stimulus process
@@ -492,6 +528,42 @@ begin
         report "Test failed for input combination: 0000, 0010" severity error;
 
 
+  -- Sixth test values
+        s_b <= "1010"; s_a <= "1010"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1010, 1010" severity error;
+
+        -- Seventh test values
+        s_b <= "1100"; s_a <= "1000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1100, 1000" severity error;
+
+        -- Eight test values
+        s_b <= "1100"; s_a <= "0000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1100, 0000" severity error;
+
+        -- Ninth test values
+        s_b <= "0000"; s_a <= "1111"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0000, 1111" severity error;
+        
+        -- Tenth test values
+        s_b <= "1111"; s_a <= "1111"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1111, 1111" severity error;
+
+
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
         wait;
@@ -501,15 +573,12 @@ end architecture testbench;
 ```
 
 
-[2021-02-22 13:05:04 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   --vcd=dump.vcd && sed -i 's/^U/X/g; s/^-/X/g; s/^H/1/g; s/^L/0/g' dump.vcd 
+[2021-02-23 03:16:26 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   
 analyze design.vhd
 analyze testbench.vhd
 elaborate tb_comparator_4bit
 testbench.vhd:51:9:@0ms:(report note): Stimulus process started
 testbench.vhd:71:9:@300ns:(assertion error): Test failed for input combination: 0011, 0000
-testbench.vhd:91:9:@500ns:(report note): Stimulus process finished
-Finding VCD file...
-./dump.vcd
-[2021-02-22 13:05:05 EST] Opening EPWave...
+testbench.vhd:127:9:@1us:(report note): Stimulus process finished
 Done
 ```
