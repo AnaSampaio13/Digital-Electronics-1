@@ -134,38 +134,56 @@ end architecture Behavioral;
 --------------------------------------------------------
 ## Exercise 3 
 
+**Step 1**
 ![Step 1](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.1.jpg)
 
+**Step 2**
 ![Step 2](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.2.jpg)
 
+**Step 3**
 ![Step 3](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.3.jpg)
 
+**Step 4**
 ![Step 4](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.4.jpg)
 
+**Step 5**
 ![Step 5](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.5.jpg)
 
+**Step 6**
 ![Step 6](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.6.jpg)
 
+**Step 7**
 ![Step 7](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.7.jpg)
 
+**Step 8**
 ![Step 8](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.8.jpg)
 
+**Step 9**
 ![Step 9](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.9.jpg)
 
+**Step 10**
 ![Step 10](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.10.jpg)
 
+**Step 11**
 ![Step 11](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.11.jpg)
 
+**Step 12**
 ![Step 12](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.12.jpg)
 
+**Step 13**
 ![Step 13](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.13.jpg)
 
+**Step 14**
 ![Step 14](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.14.jpg)
 
+**Step 15**
 ![Step 15](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.15.jpg)
 
+**Step 16**
 ![Step 16](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.16.jpg)
 
+**Step 17**
 ![Step 17](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.17.PNG)
 
+**Step 18**
 ![Step 18](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.18.PNG)
