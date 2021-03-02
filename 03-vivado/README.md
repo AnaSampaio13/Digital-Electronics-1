@@ -3,8 +3,6 @@
 https://github.com/AnaSampaio13/Digital-Electronics-1
 
 ## Exercise 1
-```VHDL
-----------------------------------------------------------------------------------
 
 ![Nexys A7 board](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex1.PNG)
 ```
@@ -133,10 +131,12 @@ end architecture Behavioral;
 
 ![Waveforms](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex2.jpg)
 --------------------------------------------------------
+```
+--------------------------------------------------------
 
 ## Exercise 3
 ```VHDL
-----------------------------------------------------------------------------------
+--------------------------------------------------------
 ###**Vivado tutorial**
 
 ![Step 1](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.1.jpg)
