@@ -128,14 +128,11 @@ end architecture Behavioral;
 ```
 --------------------------------------------------------
 ###**Screenshot**
-```VHDL 
 
 ![Waveforms](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex2.jpg)
-```
 
 --------------------------------------------------------
 ## Exercise 3 
-```VHDL 
 
 ![Step 1](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/03-vivado/Pictures/Ex3.1.jpg)
 
