@@ -25,16 +25,6 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
 
 ###**Listing of VHDL code of the process**
 ------------------------------------------------------------------------
---
--- N-bit Up/Down binary counter.
--- Nexys A7-50T, Vivado v2020.1.1, EDA Playground
---
--- Copyright (c) 2019-Present Tomas Fryza
--- Dept. of Radio Electronics, Brno University of Technology, Czechia
--- This work is licensed under the terms of the MIT license.
---
-------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -44,7 +34,7 @@ use ieee.numeric_std.all;
 ------------------------------------------------------------------------
 entity cnt_up_down is
     generic(
-        g_CNT_WIDTH : natural := 4      -- Number of bits for counter
+        g_CNT_WIDTH : natural := 5      -- Number of bits for counter
     );
     port(
         clk      : in  std_logic;       -- Main clock
@@ -100,16 +90,6 @@ end architecture behavioral;
 --------------------------------------------------------------------------------------
 ###**Listing of VHDL reset and stimulus processes from testbench file**
 ------------------------------------------------------------------------
---
--- Testbench for N-bit Up/Down binary counter.
--- Nexys A7-50T, Vivado v2020.1.1, EDA Playground
---
--- Copyright (c) 2020-Present Tomas Fryza
--- Dept. of Radio Electronics, Brno University of Technology, Czechia
--- This work is licensed under the terms of the MIT license.
---
-------------------------------------------------------------------------
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -126,7 +106,7 @@ end entity tb_cnt_up_down;
 architecture testbench of tb_cnt_up_down is
 
     -- Number of bits for testbench counter
-    constant c_CNT_WIDTH         : natural := 4;
+    constant c_CNT_WIDTH         : natural := 5;
     constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
 
     --Local signals
