@@ -25,40 +25,6 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
 
 ###**Listing of VHDL code of the process**
 ------------------------------------------------------------------------
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
-
-------------------------------------------------------------------------
--- Entity declaration for n-bit counter
-------------------------------------------------------------------------
-entity cnt_up_down is
-    generic(
-        g_CNT_WIDTH : natural := 5      -- Number of bits for counter
-    );
-    port(
-        clk      : in  std_logic;       -- Main clock
-        reset    : in  std_logic;       -- Synchronous reset
-        en_i     : in  std_logic;       -- Enable input
-        cnt_up_i : in  std_logic;       -- Direction of the counter
-        cnt_o    : out std_logic_vector(g_CNT_WIDTH - 1 downto 0)
-    );
-end entity cnt_up_down;
-
-------------------------------------------------------------------------
--- Architecture body for n-bit counter
-------------------------------------------------------------------------
-architecture behavioral of cnt_up_down is
-
-    -- Local counter
-    signal s_cnt_local : unsigned(g_CNT_WIDTH - 1 downto 0);
-
-begin
-    --------------------------------------------------------------------
-    -- p_cnt_up_down:
-    -- Clocked process with synchronous reset which implements n-bit 
-    -- up/down counter.
-    --------------------------------------------------------------------
     p_cnt_up_down : process(clk)
     begin
         if rising_edge(clk) then
@@ -90,62 +56,6 @@ end architecture behavioral;
 --------------------------------------------------------------------------------------
 ###**Listing of VHDL reset and stimulus processes from testbench file**
 ------------------------------------------------------------------------
-library ieee;
-use ieee.std_logic_1164.all;
-
-------------------------------------------------------------------------
--- Entity declaration for testbench
-------------------------------------------------------------------------
-entity tb_cnt_up_down is
-    -- Entity of testbench is always empty
-end entity tb_cnt_up_down; 
-
-------------------------------------------------------------------------
--- Architecture body for testbench
-------------------------------------------------------------------------
-architecture testbench of tb_cnt_up_down is
-
-    -- Number of bits for testbench counter
-    constant c_CNT_WIDTH         : natural := 5;
-    constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
-
-    --Local signals
-    signal s_clk_100MHz : std_logic;
-    signal s_reset      : std_logic;
-    signal s_en         : std_logic;
-    signal s_cnt_up     : std_logic;
-    signal s_cnt        : std_logic_vector(c_CNT_WIDTH - 1 downto 0);
-
-begin
-    -- Connecting testbench signals with cnt_up_down entity
-    -- (Unit Under Test)
-    uut_cnt : entity work.cnt_up_down
-        generic map(
-            g_CNT_WIDTH  => c_CNT_WIDTH
-        )
-        port map(
-            clk      => s_clk_100MHz,
-            reset    => s_reset,
-            en_i     => s_en,
-            cnt_up_i => s_cnt_up,
-            cnt_o    => s_cnt
-        );
-
-    --------------------------------------------------------------------
-    -- Clock generation process
-    --------------------------------------------------------------------
-    p_clk_gen : process
-    begin
-        while now < 750 ns loop         -- 75 periods of 100MHz clock
-            s_clk_100MHz <= '0';
-            wait for c_CLK_100MHZ_PERIOD / 2;
-            s_clk_100MHz <= '1';
-            wait for c_CLK_100MHZ_PERIOD / 2;
-        end loop;
-        wait;
-    end process p_clk_gen;
-
-    --------------------------------------------------------------------
     -- Reset generation process
     --------------------------------------------------------------------
     p_reset_gen : process
@@ -194,10 +104,87 @@ end architecture testbench;
 -------------------------------------------------------------------
 
 ##Exercise 3
-```VHDL
--------------------------------------------------------------------
-
+```VHDL 
 ###**Listing of VHDL code from source file**
+-------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity top is
+    Port ( CLK100MHZ : in STD_LOGIC;
+           BTNC : in STD_LOGIC;
+           SW : in STD_LOGIC_VECTOR (1 downto 0);
+           LED : out STD_LOGIC_VECTOR (3 downto 0);
+           CA : out STD_LOGIC;
+           CB : out STD_LOGIC;
+           CC : out STD_LOGIC;
+           CD : out STD_LOGIC;
+           CE : out STD_LOGIC;
+           CF : out STD_LOGIC;
+           CG : out STD_LOGIC;
+           AN : out STD_LOGIC_VECTOR (7 downto 0));
+end top;
+
+------------------------------------------------------------------------
+-- Architecture body for top level
+------------------------------------------------------------------------
+architecture Behavioral of top is
+
+    -- Internal clock enable
+    signal s_en  : std_logic;
+    -- Internal counter
+    signal s_cnt : std_logic_vector(4 - 1 downto 0);
+
+begin
+
+    --------------------------------------------------------------------
+    -- Instance (copy) of clock_enable entity
+    clk_en0 : entity work.clock_enable
+        generic map(
+            g_MAX => 10
+        )
+        port map(
+            clk   => CLK100MHZ,
+            reset => BTNC,
+            ce_o  => s_en
+        );
+
+    --------------------------------------------------------------------
+    -- Instance (copy) of cnt_up_down entity
+    bin_cnt0 : entity work.cnt_up_down
+        generic map(
+            g_CNT_WIDTH  => 4
+        )
+        port map(
+            clk         => CLK100MHZ,
+            reset       => BTNC,
+            en_i        => s_en,
+            cnt_up_i    => SW(1),
+            cnt_down_i  => SW(0),
+            cnt_o       => s_cnt
+        );
+
+    -- Display input value on LEDs
+    LED(3 downto 0) <= s_cnt;
+
+    --------------------------------------------------------------------
+    -- Instance (copy) of hex_7seg entity
+    hex2seg : entity work.hex_7seg
+        port map(
+            hex_i    => s_cnt,
+            seg_o(6) => CA,
+            seg_o(5) => CB,
+            seg_o(4) => CC,
+            seg_o(3) => CD,
+            seg_o(2) => CE,
+            seg_o(1) => CF,
+            seg_o(0) => CG
+        );
+
+    -- Connect one common anode to 3.3V
+    AN <= b"1111_1110";
+              
+end architecture Behavioral;
 ```
 -------------------------------------------------------------------
 ###**Image of the top layer including both counters**
