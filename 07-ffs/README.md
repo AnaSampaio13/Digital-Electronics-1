@@ -15,28 +15,28 @@ q_{n+1}^T =&\\
 
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 |  |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 |  |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |  |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |  |  |   
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 | 0 | Reset |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 | 0 | Reset |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 0 | 1 | Set |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 1 | 1 | Set |   
 
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
    | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 | 0 | 0 | No change |
    | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 | 1 | 1 | No change |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 |   |   |   |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 |   |   |   |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |   |   |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |   |   |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |   |   |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |   |   |  |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 | 0 | 0 | Reset |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 | 1 | 0 | Reset |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 0 | 0 | 1 | Set |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 0 | 1 | 1 | Set |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 1 | 0 | 1 | Toggles |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 1 | 1 | 0 | Toggles |
 
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 |  |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 |  |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |  |  |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 |   |  |  |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 | 0 | No change |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 | 1 | No change |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 0 | 1 | Toggles |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 1 | 0 | Toggles |
 ------------------------------------------------------------------------------------   
 ##Exercise 2
 ```VHDL
