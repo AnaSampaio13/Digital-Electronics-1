@@ -405,7 +405,7 @@ p_jk_ff_rst : process (clk)
     q <= s_q;
     q_bar <= not s_q;	
 --------------------------------------------------------------------
-###**Listing of VHDL clock, reset and stimulus processes from the testbench files tb_jk_ff_arst**
+###**Listing of VHDL clock, reset and stimulus processes from the testbench files tb_jk_ff_rst**
 
 --------------------------------------------------------------------
 -- Clock generation process
