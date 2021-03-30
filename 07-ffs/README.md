@@ -26,8 +26,8 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 0 | 0 | No change |
    | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 0 | 1 | 0 | No change |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 0 | 1 | Sampled abd stored |
-   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 1 | 1 | Sampled abd stored |  
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 0 | 1 | Sampled and stored |
+   | ![rising](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1.PNG) | 1 | 1 | 1 | Sampled and stored |  
 
 ####**JK-type flip-flop**   
 
@@ -85,4 +85,4 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
 -------------------------------------------------------------------------
 ##Exercise 4
 
-![Image of the shift register schematic]()
+![Image of the shift register schematic](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex4.jpg)
