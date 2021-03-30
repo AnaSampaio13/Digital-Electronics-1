@@ -8,15 +8,15 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
 -----------------------------------
 ####**D-type flip-flop**
 
-q_(n+1)^D = d
+![D-type flip-flop equation](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1_D.PNG)
 ------------------------------------------------ 
 ####**JK-type flip-flop**
 
-q_(n+1)^(JK) = j . (q_n ) ̅ + k ̅ . (q_n ) 
+![JK-type flip-flop equation](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1_JK.PNG) 
 ------------------------------------------------   
 ####**T-type flip-flop**
 
-q_(n+1)^T = t . (q_n ) ̅ + t ̅ . (q_n)
+![T-type flip-flop equation](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/07-ffs/Pictures/Ex1_T.PNG)
 --------------------------------------------------------------------------------
 ###**Truth tables**
 -------------------------------------------------
