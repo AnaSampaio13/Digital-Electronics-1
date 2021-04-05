@@ -17,10 +17,10 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
 ![Nexys A7 board](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/08-traffic_lights/Pictures/Ex1.2.PNG)
 ![Nexys A7 board](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/08-traffic_lights/Pictures/Ex1.3.PNG)
 
-**RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** 
---- | --- | --- | --- | ---
-LD16 | N15, M16, R12 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```
-LD17 | N16, R11, G14 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```
+|**RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green**| 
+|:-- | :-- | :-- | :-- | :--|
+|LD16 | N15, M16, R12 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```|
+|LD17 | N16, R11, G14 | ```1,0,0``` | ```1,1,0``` | ```0,1,0```|
 ---------------------------------------------------------------------------------
 ##Exercise 2
 ---------------------------------------------------------------------------------
