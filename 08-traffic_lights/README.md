@@ -26,12 +26,15 @@ https://github.com/AnaSampaio13/Digital-Electronics-1
 ---------------------------------------------------------------------------------
 ###**State diagram**
 
+![State diagram](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/08-traffic_lights/Pictures/Ex2.jpg)
 ---------------------------------------------------------------------------------
 ###**Listing of VHDL code of sequential process**
 ```VHDL
 
+```
 ---------------------------------------------------------------------------------
 ###**Listing of VHDL code of combinatorial process**
+```VHDL
 
 ```
 ---------------------------------------------------------------------------------
