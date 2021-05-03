@@ -22,7 +22,7 @@ Green LEDs show that the object is still far. Yellow LEDs show that the object i
 
 
 ### **Flowchart of the project**
-![Flowchart](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Flowchart.png)
+![Flowchart](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/Flowchart.png)
 
 
 
@@ -71,18 +71,18 @@ J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 
 
 ### **Arty A7-35T from TOP side**
-![Arty A7-35T](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Arty_A7-35T.jpg)
+![Arty A7-35T](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/Arty_A7-35T.jpg)
 
 ### **External PCB Schematic**
-![External PCB Schemati](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_Schematic.png)
+![External PCB Schemati](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/External_PCB_Schematic.png)
 
 ### **External PCB 3D model from top side**
-![External PCB 3D model from top side](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_3D_TOP.png)
+![External PCB 3D model from top side](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/External_PCB_3D_TOP.png)
 
 Small disclaimer: the actual colours of the U3 (HDSP-4832 / LED bar) is different than in the picture because we couldn't find the correct 3D model. Starting from the bottom the first three LEDs are green, then four yellow LEDs and then three red LEDs.
 
 ### **External PCB 3D model from bottom side**
-![External PCB 3D model from bottom side](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/External_PCB_3D_BOT.png)
+![External PCB 3D model from bottom side](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/External_PCB_3D_BOT.png)
 
 
 
@@ -98,7 +98,7 @@ The signal for the input comes directly from the top design. Inputs "0000", "101
 
 
 ### **LED_decoder simulation**
-![LED_decoder simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/LED_decoder_simulation.png)
+![LED_decoder simulation](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/LED_decoder_simulation.png)
 
 
 ### **PWM module description**
@@ -108,7 +108,7 @@ The signals are activated the same as LED_decoder, from ‘0001’ to ‘1010’
 
 
 ### **PWM simulation**
-![PWM simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/PWM_simulation.png)
+![PWM simulation](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/PWM_simulation.png)
 
 
 ### **Ultrasonic sensor module description**
@@ -126,7 +126,7 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 
 
 ### **Ultrasonic sensor simulation**
-![Ultrasonic sensor simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Ultrasonic_sensor_simulation.PNG)
+![Ultrasonic sensor simulation](https://github.com/AnaSampaio13/Digital-Electronics-1/blob/main/Project/Pictures/Ultrasonic_sensor_simulation.png)
 
 
 
@@ -140,10 +140,10 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 
 
 ### **TOP design simulation**
-![TOP design simulation](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Top_designr_simulation.png)
+![TOP design simulation]()
 
 ### **Block diagram of final application**
-![Block diagram of final application](https://github.com/TaaviSalum/Digital-electronics-1/blob/main/Labs/Project/Pictures/Final_block_diagram.png)
+![Block diagram of final application]()
 
 
 
@@ -154,7 +154,7 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 
 ------------------------------------------------------------------------
 ## **Video presentation**
-[![Video presentation](https://img.youtube.com/vi/VIDEO-ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO-ID)
+[![Video presentation]()
 
 
 
